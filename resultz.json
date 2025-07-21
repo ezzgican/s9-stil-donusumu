@@ -1,0 +1,149 @@
+{
+  "stats": "31 passed, 5 failed out of 36",
+  "tests": [
+    {
+      "name": "tailwindcss ve date-fns paketleri kurulmuş mu?",
+      "state": "pass"
+    },
+    {
+      "name": ".task classındaki padding için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": ".task classındaki background için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": ".task classındaki border-radius için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": ".task classındaki line-height için doğru tailwindcss classı kullanılmış mı?",
+      "state": "fail"
+    },
+    {
+      "name": ".task classındaki margin-top için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": ".task classındaki box-shadow için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "fail"
+    },
+    {
+      "name": "h3 deki font-size için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "h3 deki color için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "p deki padding için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "p deki font-size için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "p deki color için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki display için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki padding için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki margin-left için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki background-color için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki box-shadow için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "fail"
+    },
+    {
+      "name": "buttondaki border-radius için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki border için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "buttondaki cursor için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında display için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında padding için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında font-size için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında border için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında marginler için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "pill classında border-radius için doğru tailwindcss classı arbitrary değer olarak kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "deadline classında font-size için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "deadline classında padding-top için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "deadline classındaki spanda padding için doğru tailwindcss classları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "deadline classındaki spanda border-radius için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "deadline classındaki spanda display için doğru tailwindcss classı kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "index.css dosyasında normal ve urgent renkleri themede tanımlanmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "index.css dosyasında tailwind satırı eklenmiş mi?",
+      "state": "pass"
+    },
+    {
+      "name": "date-fns kütüphanesindeki formatDistanceToNow ve  differenceInDays metodları kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "date-fns kütüphanesindeki formatDistanceToNow ile 1 gün kaldı gibi metinler doğru yazdırılıyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "date-fns kütüphanesindeki differenceInDays ile taskin deadlineına kalan gün hesaplanarak doğru class ekleniyor mu?",
+      "state": "fail"
+    }
+  ]
+}

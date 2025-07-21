@@ -39,9 +39,9 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <div className="formColumn">
-        <div className="form-container">
+    <div className="flex h-screen" >
+      <div className="bg-white flex-none w-[360px] border-r border-[#f3d4b0] overflow-auto">
+        <div className="pt-8 pr-8 pb-6 pl-8 border-b border-[#ddd]">
           <h2>Yeni Task</h2>
           <TaskHookForm kisiler={team} submitFn={handleTaskSubmit} />
         </div>
@@ -51,9 +51,9 @@ function App() {
           <PeopleForm kisiler={team} submitFn={handlePeopleSubmit} />
         </div>
       </div>
-      <div className="columns">
-        <div className="column">
-          <h2 className="column-title">Yapılacaklar</h2>
+      <div className="flex flex-1 justify-start flex-wrap pt-8 pr-8 pb-6 pl-8 gap-8 overflow-auto">
+        <div className="flex-1 min-w-[240px] max-w-[360px] ">
+          <h2 className="text-2xl pl-3">Yapılacaklar</h2>
           <div className="column-list">
             {tasks
               .filter((t) => t.status === "yapılacak")
@@ -62,8 +62,8 @@ function App() {
               ))}
           </div>
         </div>
-        <div className="column">
-          <h2 className="column-title">Tamamlananlar</h2>
+        <div className="flex-1 min-w-[240px] max-w-[360px] ">
+          <h2 className="text-2xl pl-3">Tamamlananlar</h2>
           <div className="column-list">
             {tasks
               .filter((t) => t.status === "yapıldı")

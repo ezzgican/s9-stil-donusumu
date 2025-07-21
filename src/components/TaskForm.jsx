@@ -1,3 +1,5 @@
+import { formatDistanceToNow } from "date-fns";
+import { tr } from "date-fns/locale";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import * as Yup from "yup";
@@ -96,46 +98,48 @@ const TaskForm = ({ kisiler, submitFn }) => {
       people: [],
     });
   }
+const deadlineText = formatDistanceToNow(new Date(deadline), { locale: tr }) + " sonra";
 
   return (
     <form className="taskForm" onSubmit={handleSubmit}>
-      <div className="form-line">
-        <label className="input-label" htmlFor="title">
+      <div className="pt-4">
+        <label className="block text-sm pb-[6px]" htmlFor="title">
           Başlık
         </label>
         <input
-          className="input-text"
+          className="block w-full border border-[#ccc] p-[5px] text-sm leading-6 rounded-[3px]"
           id="title"
           name="title"
           type="text"
           onChange={handleOthersChange}
           value={formData.title}
         />
-        <p className="input-error">{formErrors.title}</p>
+        <p className="text-xs pt-[3px] text-[rgb(230,43,43)]">{formErrors.title}</p>
       </div>
 
       <div className="form-line">
-        <label className="input-label" htmlFor="description">
+        <label className="block text-sm pb-[6px]" htmlFor="description">
           Açıklama
         </label>
         <textarea
-          className="input-textarea"
+          className="block w-full border border-[#ccc] p-[5px] text-sm leading-6 rounded-[3px]"
           rows="3"
           id="description"
           name="description"
           onChange={handleOthersChange}
           value={formData.description}
         ></textarea>
-        <p className="input-error">{formErrors.description}</p>
+        <p className="text-xs pt-[3px] text-[rgb(230,43,43)]">{formErrors.description}</p>
       </div>
 
       <div className="form-line">
-        <label className="input-label">İnsanlar</label>
+        <label className="block text-sm pb-[6px]">İnsanlar</label>
         <div>
           {kisiler.map((p) => (
-            <label className="input-checkbox" key={p}>
+            <label className="inline-flex items-center text-sm px-[8px] py-[6px] pr-[8px] pl-[6px] rounded-[3px] border border-[#ccc] mr-2 mb-2 cursor-pointer" key={p}>
               <input
                 type="checkbox"
+                className="mr-1"
                 name="people"
                 value={p}
                 onChange={handleCheckboxChange}
@@ -145,7 +149,7 @@ const TaskForm = ({ kisiler, submitFn }) => {
             </label>
           ))}
         </div>
-        <p className="input-error">{formErrors.people}</p>
+        <p className="text-xs pt-[3px] text-[rgb(230,43,43)]">{formErrors.people}</p>
       </div>
 
       <div className="form-line">

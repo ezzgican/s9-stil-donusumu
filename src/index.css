@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --color-normal: #ffd9d4;
+  --color-urgent: #d4d7ff;
+}
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
